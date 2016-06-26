@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour {
 
 	    if(timerActive)
         {
-            Debug.Log("current time set to " + currentTime.ToString());
+            
 
             currentTime -= Time.deltaTime;
 
