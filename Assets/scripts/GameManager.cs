@@ -19,10 +19,13 @@ public class GameManager : MonoBehaviour {
 
     bool timerActive;
 
+    CameraShaker camShaker;
+
 	// Use this for initialization
 	void Start () {
         ui = GameObject.FindObjectOfType<UIManager>();
         InitGame();
+        camShaker = GameObject.FindObjectOfType<CameraShaker>();
 	}
 
     bool CheckForBestScore()
@@ -79,6 +82,8 @@ public class GameManager : MonoBehaviour {
 
     public void AddScore(int n,Vector3 where)
     {
+
+        camShaker.ShakeScreen();
         score += n;
 
         GameObject go =(GameObject) Instantiate(pointsPrefab, where, Quaternion.identity);
