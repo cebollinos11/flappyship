@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour {
 
     public int maxBullets,maxtime;
     [HideInInspector]    
-    public int currentBullets,score;
+    public int currentBullets,score,bestScore;
 
     [HideInInspector]
     public float currentTime;
@@ -24,6 +24,19 @@ public class GameManager : MonoBehaviour {
         ui = GameObject.FindObjectOfType<UIManager>();
         InitGame();
 	}
+
+    bool CheckForBestScore()
+    {
+        if (score >= bestScore)
+        {
+            bestScore = score;
+            return true;
+        }
+
+        return false;
+            
+
+    }
 	
 
     public void InitGame()
@@ -41,7 +54,7 @@ public class GameManager : MonoBehaviour {
 
         for (int i = 0; i < ships.Length; i++)
         {
-            //Destroy(ships[i].gameObject);
+            Destroy(ships[i].gameObject);
         }
 
         timerActive = true;
@@ -50,6 +63,7 @@ public class GameManager : MonoBehaviour {
 
     void EndGame()
     {
+        CheckForBestScore();
         ui.ShowResults();
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour {
 
     [SerializeField]
-    Text Bullets, Score, SummaryScore, Time;
+    Text Bullets, Score, SummaryScore, Time,SummaryBestScore;
 
     [SerializeField]GameObject LevelSummary;
 
@@ -25,6 +25,7 @@ public class UIManager : MonoBehaviour {
     {
         LevelSummary.SetActive(true);
         SummaryScore.text = gm.score.ToString();
+        SummaryBestScore.text = gm.bestScore.ToString();
     }
 	
 	// Update is called once per frame
