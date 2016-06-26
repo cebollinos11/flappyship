@@ -28,6 +28,8 @@ public class spaceship : MonoBehaviour {
         speed = Random.Range(minSpeed, maxSpeed);
 
         gm = GameObject.FindObjectOfType<GameManager>();
+
+        gameObject.AddComponent<DestroyIfUnderX>();
 	}
 
     public void DestroySelf(int multiplier)
@@ -39,6 +41,7 @@ public class spaceship : MonoBehaviour {
         rb.isKinematic = false;
         this.enabled = false;
         rb.AddForce(transform.forward * 200f);
+        rb.AddForce(Vector3.forward * 300f);
         rb.AddTorque(new Vector3(100f, 0, 100f));
         gm.AddScore(10*multiplier, transform.position);
 
