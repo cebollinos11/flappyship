@@ -81,6 +81,7 @@ MonoBehaviour:
   burstFreq: 30
   miniSpaceshipChance: 10
   spawnLayers: 10
+  diagonalChance: 0.4
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

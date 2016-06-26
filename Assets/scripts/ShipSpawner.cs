@@ -11,6 +11,9 @@ public class ShipSpawner : MonoBehaviour {
     [SerializeField]
     int spawnLayers;
 
+    [SerializeField]
+    float diagonalChance;
+
 	// Use this for initialization
 	void Start () {
         spawnBox = GetComponent<BoxCollider2D>();
@@ -52,6 +55,26 @@ public class ShipSpawner : MonoBehaviour {
             orientation = Quaternion.Euler(0, -90, 0);
 
         }
+
+        //add change on orientation if it spawns low
+
+
+        if(Random.Range(0,1.0f)<diagonalChance)
+        {
+            if (dice > spawnLayers / 2)
+            {
+                orientation = Quaternion.Euler(-10, orientation.eulerAngles.y, orientation.eulerAngles.z);
+            }
+
+            if (dice < spawnLayers / 8)
+            {
+                orientation = Quaternion.Euler(10, orientation.eulerAngles.y, orientation.eulerAngles.z);
+            }
+        }
+
+
+        
+
 
 
         GameObject ship = SpaceshipPrefab;
