@@ -56,12 +56,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxBullets: 8
-  maxtime: 60
+  maxtime: 45
   currentBullets: 0
   score: 0
   bestScore: 0
   currentTime: 0
+  ui: {fileID: 0}
   pointsPrefab: {fileID: 146172, guid: 63af7da9b73651547baed8200a439b9e, type: 2}
+  ExtraTimeBonus: 6
 --- !u!114 &11484376
 MonoBehaviour:
   m_ObjectHideFlags: 1

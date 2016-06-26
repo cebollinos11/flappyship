@@ -8,6 +8,20 @@ public class turretShooter : MonoBehaviour {
 
     GameManager gm;
 
+    public float reloadTime;
+    bool isReloading;
+
+    
+
+    IEnumerator ReloadCoroutine()
+    {
+        gm.ui.ShowReload();
+        yield return new WaitForSeconds(reloadTime);
+        gm.currentBullets = gm.maxBullets;
+        isReloading = false;
+        gm.ui.HideReload();
+    }
+
 
     void Shoot()
     {
@@ -19,13 +33,18 @@ public class turretShooter : MonoBehaviour {
             GameObject mi;
             mi = (GameObject)Instantiate(missilePrefab, transform.position, transform.rotation);
 
-            if(gm.currentBullets<1)
+            /*if(gm.currentBullets<1)
                 gm.prepareToEnd();
+             * */
         }
 
         else
         {
-            
+            if (!isReloading)
+            {
+                isReloading = true;
+                StartCoroutine(ReloadCoroutine());
+            }
         }
 
         
@@ -34,6 +53,7 @@ public class turretShooter : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gm = GameObject.FindObjectOfType<GameManager>();
+        
 	}
 	
 	// Update is called once per frame

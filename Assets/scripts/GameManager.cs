@@ -12,12 +12,14 @@ public class GameManager : MonoBehaviour {
 
     bool isPreparedToEnd;
 
-    UIManager ui;
+    public UIManager ui;
 
     [SerializeField]
     GameObject pointsPrefab;
 
     bool timerActive;
+    [SerializeField]
+    int ExtraTimeBonus;
 
     CameraShaker camShaker;
 
@@ -44,7 +46,7 @@ public class GameManager : MonoBehaviour {
 
     public void InitGame()
     {
-
+        Time.timeScale = 1f;
         ui.HideResults();
 
         currentTime = maxtime;
@@ -68,6 +70,9 @@ public class GameManager : MonoBehaviour {
     {
         CheckForBestScore();
         ui.ShowResults();
+        ui.HideReload();
+        Time.timeScale = 0f;
+        
     }
 
     public void prepareToEnd(){
@@ -88,6 +93,12 @@ public class GameManager : MonoBehaviour {
 
         GameObject go =(GameObject) Instantiate(pointsPrefab, where, Quaternion.identity);
         go.GetComponent<PointsParticle>().SetNumber(n);
+
+        if(n>=50)
+        {
+            currentTime += ExtraTimeBonus;
+            ui.ShowExtraTime();
+        }
     }
 
 

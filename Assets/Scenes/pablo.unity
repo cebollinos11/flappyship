@@ -206,10 +206,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2367040, guid: 1eb3f0bd75005dd4fb14f42476c9316e, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1eb3f0bd75005dd4fb14f42476c9316e, type: 2}
   m_IsPrefabParent: 0
@@ -401,29 +397,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 126080, guid: 125d967794ee4ea4c8f56004bb175fdb, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 125d967794ee4ea4c8f56004bb175fdb, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1749315122 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 151520, guid: 1eb3f0bd75005dd4fb14f42476c9316e, type: 2}
-  m_PrefabInternal: {fileID: 781015653}
---- !u!114 &1749315127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1749315122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00624ff533a85344084857e3bb1cd52b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!1 &2002489392
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +413,7 @@ GameObject:
   - 124: {fileID: 2002489394}
   - 81: {fileID: 2002489393}
   - 114: {fileID: 2002489398}
+  - 114: {fileID: 2002489399}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -522,6 +499,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d32e15fae6c4b4ba27dcd01977e0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2002489399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2002489392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba46d0a4bbc9c94082267e0f97eae3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 0}
+  shakeDuration: 0
+  shakeAmount: 0.7
+  decreaseFactor: 1
 --- !u!1 &2136884705
 GameObject:
   m_ObjectHideFlags: 0

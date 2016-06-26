@@ -7,7 +7,9 @@ public class UIManager : MonoBehaviour {
     [SerializeField]
     Text Bullets, Score, SummaryScore, Time,SummaryBestScore;
 
-    [SerializeField]GameObject LevelSummary;
+    [SerializeField]GameObject LevelSummary,ExtraTime;
+    [SerializeField]
+    GameObject Reloading;
 
     GameManager gm;
 
@@ -16,6 +18,20 @@ public class UIManager : MonoBehaviour {
         gm = GameObject.FindObjectOfType<GameManager>();
 	
 	}
+
+    public void ShowExtraTime()
+    {
+        ExtraTime.SetActive(true);
+    }
+
+    public void HideReload()
+    {
+        Reloading.SetActive(false);
+    }
+    public void ShowReload()
+    {
+        Reloading.SetActive(true);
+    }
 
     public void HideResults()
     {
