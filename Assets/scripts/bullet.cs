@@ -17,7 +17,7 @@ public class bullet : MonoBehaviour {
     bool dumpingEnabled;
 
     [SerializeField] float timeToDrop;
-    float timeToLive = 1f;
+    [SerializeField]float timeToLive = 1f;
 
     public int multiplier = 1;
 

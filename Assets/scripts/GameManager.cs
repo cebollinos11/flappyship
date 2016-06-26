@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour {
 
         for (int i = 0; i < ships.Length; i++)
         {
-            Destroy(ships[i].gameObject);
+            //Destroy(ships[i].gameObject);
         }
 
         timerActive = true;

@@ -132,9 +132,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 8
-  minSpeed: 1
-  bullet: {fileID: 118770, guid: 49afe0742b230bb44a5bb0b4c90fc177, type: 2}
-  bulletsToinstantiate: 12
+  minSpeed: 4
+  bullet: {fileID: 118770, guid: 47cc0f5eefd731b49ab8f3ae39e0df31, type: 2}
+  bulletsToinstantiate: 20
   alreadyDestroyed: 0
   SmokeParticles: {fileID: 150394, guid: 1e0a6d546c04889478377a52171b56ff, type: 2}
 --- !u!1001 &100100000

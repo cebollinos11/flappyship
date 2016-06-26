@@ -502,6 +502,14 @@ Prefab:
       propertyPath: m_Size.y
       value: 28.448807
       objectReference: {fileID: 0}
+    - target: {fileID: 126080, guid: 125d967794ee4ea4c8f56004bb175fdb, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484376, guid: 125d967794ee4ea4c8f56004bb175fdb, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 125d967794ee4ea4c8f56004bb175fdb, type: 2}
   m_IsPrefabParent: 0

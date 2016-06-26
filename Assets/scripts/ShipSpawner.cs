@@ -5,9 +5,9 @@ public class ShipSpawner : MonoBehaviour {
 
     BoxCollider2D spawnBox;
     [SerializeField]
-    GameObject SpaceshipPrefab;
+    GameObject SpaceshipPrefab,MiniSpaceShipPrefab;
     float t;
-    [SerializeField] float spawnFreq,burstFreq;
+    [SerializeField] float spawnFreq,burstFreq,miniSpaceshipChance;
     [SerializeField]
     int spawnLayers;
 
@@ -54,9 +54,17 @@ public class ShipSpawner : MonoBehaviour {
         }
 
 
+        GameObject ship = SpaceshipPrefab;
+
+        //chance for mini space ship
 
 
-        Instantiate(SpaceshipPrefab, randomSpot, orientation);
+        if(Random.Range(0,100)<miniSpaceshipChance)
+        {
+            ship = MiniSpaceShipPrefab;
+        }
+
+        Instantiate(ship, randomSpot, orientation);
 
     }
 	

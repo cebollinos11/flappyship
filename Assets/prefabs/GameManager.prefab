@@ -73,8 +73,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpaceshipPrefab: {fileID: 127102, guid: cefd960ce060baa4a9844a76e53bf4db, type: 2}
+  MiniSpaceShipPrefab: {fileID: 127102, guid: e1043970f6bbc514da4c0337d3c0a02d, type: 2}
   spawnFreq: 3
   burstFreq: 30
+  miniSpaceshipChance: 10
   spawnLayers: 10
 --- !u!1001 &100100000
 Prefab:
