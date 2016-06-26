@@ -3,7 +3,12 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-    public int maxBullets,currentBullets,score;
+    public int maxBullets,maxtime;
+    [HideInInspector]    
+    public int currentBullets,score;
+
+    [HideInInspector]
+    public float currentTime;
 
     bool isPreparedToEnd;
 
@@ -11,6 +16,8 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     GameObject pointsPrefab;
+
+    bool timerActive;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +30,9 @@ public class GameManager : MonoBehaviour {
     {
 
         ui.HideResults();
+
+        currentTime = maxtime;
+        timerActive = true;
         score = 0;
         currentBullets = maxBullets;
         isPreparedToEnd=false;
@@ -33,6 +43,8 @@ public class GameManager : MonoBehaviour {
         {
             Destroy(ships[i].gameObject);
         }
+
+        timerActive = true;
 
     }
 
@@ -62,6 +74,20 @@ public class GameManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-	
+
+
+	    if(timerActive)
+        {
+            Debug.Log("current time set to " + currentTime.ToString());
+
+            currentTime -= Time.deltaTime;
+
+            if(currentTime<0)
+            {
+                currentTime = 0;
+                timerActive = false;
+                prepareToEnd();
+            }
+        }
 	}
 }

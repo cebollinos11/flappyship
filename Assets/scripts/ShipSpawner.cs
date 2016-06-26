@@ -14,7 +14,7 @@ public class ShipSpawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         spawnBox = GetComponent<BoxCollider2D>();
-        Debug.Log(spawnBox.bounds.max);
+
         SpawnShip();
         t = 0f;
 	}

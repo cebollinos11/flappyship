@@ -56,8 +56,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxBullets: 8
+  maxtime: 60
   currentBullets: 0
   score: 0
+  currentTime: 0
   pointsPrefab: {fileID: 146172, guid: 63af7da9b73651547baed8200a439b9e, type: 2}
 --- !u!114 &11484376
 MonoBehaviour:

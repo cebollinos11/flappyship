@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour {
 
     [SerializeField]
-    Text Bullets, Score, SummaryScore;
+    Text Bullets, Score, SummaryScore, Time;
 
     [SerializeField]GameObject LevelSummary;
 
@@ -32,6 +32,7 @@ public class UIManager : MonoBehaviour {
 
         Bullets.text = gm.currentBullets.ToString();
         Score.text = gm.score.ToString();
+        Time.text = ((int) (gm.currentTime)).ToString();
 
         
 	
