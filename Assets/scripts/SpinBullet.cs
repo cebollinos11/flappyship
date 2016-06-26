@@ -10,6 +10,6 @@ public class SpinBullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(Vector3.forward * 10, Space.Self);
+        transform.Rotate(Vector3.forward * 1000*Time.deltaTime, Space.Self);
 	}
 }
