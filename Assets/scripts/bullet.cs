@@ -24,7 +24,7 @@ public class bullet : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         t = 0;
-
+        gameObject.AddComponent<SpinBullet>();
 	
 	}
 
@@ -50,11 +50,13 @@ public class bullet : MonoBehaviour {
                 tr.materials[0].color = Color.white;
                 break;
             case 6:
-                tr.materials[0].color = Color.black;
+                tr.materials[0].color = Color.white;
                 break;
             default:
                 break;
         }
+
+        GetComponent<MeshRenderer>().materials[0].color = tr.materials[0].color;
         
     }
 	

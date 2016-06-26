@@ -41,9 +41,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -2.5344849}
   serializedVersion: 2
-  m_Size: {x: 97.98, y: 33.517776}
+  m_Size: {x: 97.98, y: 28.448807}
 --- !u!114 &11436906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -59,6 +59,7 @@ MonoBehaviour:
   maxtime: 60
   currentBullets: 0
   score: 0
+  bestScore: 0
   currentTime: 0
   pointsPrefab: {fileID: 146172, guid: 63af7da9b73651547baed8200a439b9e, type: 2}
 --- !u!114 &11484376
