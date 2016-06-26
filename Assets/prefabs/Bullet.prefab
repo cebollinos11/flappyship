@@ -75,7 +75,7 @@ TrailRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 8ea4a4fbdab3bc34eb4048357eb44ec1, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -142,6 +142,7 @@ MonoBehaviour:
     m_RotationOrder: 0
   hasDump: 0
   timeToDrop: 0.5
+  timeToLive: 1
   multiplier: 1
 --- !u!135 &13540670
 SphereCollider:

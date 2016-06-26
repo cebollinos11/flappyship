@@ -27,6 +27,36 @@ public class bullet : MonoBehaviour {
 
 	
 	}
+
+    public void SetMultiplier(int i)
+    {
+
+        
+        multiplier = i;
+        TrailRenderer tr = GetComponent<TrailRenderer>();
+
+        switch (i)
+        {
+            case 2:
+                tr.materials[0].color = Color.red;
+                break;
+            case 3:
+                tr.materials[0].color = Color.blue;
+                break;
+            case 4:
+                tr.materials[0].color = Color.yellow;
+                break;
+            case 5:
+                tr.materials[0].color = Color.white;
+                break;
+            case 6:
+                tr.materials[0].color = Color.black;
+                break;
+            default:
+                break;
+        }
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {

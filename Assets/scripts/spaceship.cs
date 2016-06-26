@@ -61,7 +61,7 @@ public class spaceship : MonoBehaviour {
         {
             float curAngle = i * 360 / bulletsToinstantiate;
             bu = (GameObject)Instantiate(bullet, transform.position, Quaternion.Euler(curAngle,90,0));
-            bu.GetComponent<bullet>().multiplier = multiplier;
+            bu.GetComponent<bullet>().SetMultiplier(multiplier);
         }
 
     }

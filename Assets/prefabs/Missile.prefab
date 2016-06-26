@@ -87,7 +87,7 @@ TrailRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: d50314eeb8530b44dbdb76f809e73523, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -154,6 +154,7 @@ MonoBehaviour:
     m_RotationOrder: 0
   hasDump: 0
   timeToDrop: 1
+  timeToLive: 1
   multiplier: 1
 --- !u!1001 &100100000
 Prefab:
