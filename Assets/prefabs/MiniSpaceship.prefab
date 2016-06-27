@@ -62,6 +62,7 @@ GameObject:
   - 4: {fileID: 406846}
   - 33: {fileID: 3391066}
   - 23: {fileID: 2331876}
+  - 114: {fileID: 11443080}
   m_Layer: 0
   m_Name: Ship1
   m_TagString: Untagged
@@ -156,7 +157,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: 67fc13556dd57a64da88a1947017ae72, type: 2}
+  - {fileID: 2100000, guid: 433ca12aa9b4a7947a186b9964a664b3, type: 2}
   - {fileID: 2100000, guid: e36213fded19079498c6ddf26cc4e316, type: 2}
   - {fileID: 2100000, guid: 057980071e2eb3746b28719c7d692d5a, type: 2}
   - {fileID: 2100000, guid: 7748dbd2c4d8b95438958371318ea6f3, type: 2}
@@ -291,6 +292,17 @@ MonoBehaviour:
   bulletsToinstantiate: 20
   alreadyDestroyed: 0
   SmokeParticles: {fileID: 150394, guid: 1e0a6d546c04889478377a52171b56ff, type: 2}
+--- !u!114 &11443080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9badcaa013388e4795902577c3cf81e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
