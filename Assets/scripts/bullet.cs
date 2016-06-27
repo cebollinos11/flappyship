@@ -56,7 +56,9 @@ public class bullet : MonoBehaviour {
                 break;
         }
 
+        tr.material.SetColor("_EmissionColor", tr.materials[0].color);
         GetComponent<MeshRenderer>().materials[0].color = tr.materials[0].color;
+        GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", tr.materials[0].color);
         
     }
 	
