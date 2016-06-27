@@ -63,7 +63,7 @@ MonoBehaviour:
   currentTime: 0
   ui: {fileID: 0}
   pointsPrefab: {fileID: 146172, guid: 63af7da9b73651547baed8200a439b9e, type: 2}
-  ExtraTimeBonus: 6
+  ExtraTimeBonus: 3
 --- !u!114 &11484376
 MonoBehaviour:
   m_ObjectHideFlags: 1

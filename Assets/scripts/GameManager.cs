@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour {
             return;
 
         isPreparedToEnd = true;
-        Invoke("EndGame", 3f);
+        Invoke("EndGame", 0.1f);
 
     }
 
