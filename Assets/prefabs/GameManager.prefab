@@ -11,6 +11,8 @@ GameObject:
   - 114: {fileID: 11484376}
   - 61: {fileID: 6196916}
   - 114: {fileID: 11436906}
+  - 114: {fileID: 11421512}
+  - 114: {fileID: 11472056}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,6 +46,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -2.5344849}
   serializedVersion: 2
   m_Size: {x: 97.98, y: 28.448807}
+--- !u!114 &11421512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b13bf6a4c6c3d4986b8cee1d493e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSongs:
+  - {fileID: 8300000, guid: d96bd944eae37f1418c091ad6cc4648c, type: 3}
 --- !u!114 &11436906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64,6 +79,19 @@ MonoBehaviour:
   ui: {fileID: 0}
   pointsPrefab: {fileID: 146172, guid: 63af7da9b73651547baed8200a439b9e, type: 2}
   ExtraTimeBonus: 3
+--- !u!114 &11472056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9128bf66a8a6d7469ccd3acdcfb28e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s_PrepareToEngage: {fileID: 8300000, guid: 113ffb4312de3054fbbc0bbb6db92095, type: 3}
+  Combo: {fileID: 8300000, guid: b2e3fa5ec309bde4a8aa952a9cdb1234, type: 3}
 --- !u!114 &11484376
 MonoBehaviour:
   m_ObjectHideFlags: 1

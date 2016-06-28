@@ -300,6 +300,7 @@ MonoBehaviour:
   bulletsToinstantiate: 12
   alreadyDestroyed: 0
   SmokeParticles: {fileID: 150394, guid: 1e0a6d546c04889478377a52171b56ff, type: 2}
+  s_explosion: {fileID: 8300000, guid: f094cc79f6f190d418dd04f2540d626d, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

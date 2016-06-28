@@ -292,6 +292,7 @@ MonoBehaviour:
   bulletsToinstantiate: 20
   alreadyDestroyed: 0
   SmokeParticles: {fileID: 150394, guid: 1e0a6d546c04889478377a52171b56ff, type: 2}
+  s_explosion: {fileID: 8300000, guid: d91f66c69859d184c89cbf2728f116cf, type: 3}
 --- !u!114 &11443080
 MonoBehaviour:
   m_ObjectHideFlags: 1

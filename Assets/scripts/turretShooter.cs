@@ -11,6 +11,7 @@ public class turretShooter : MonoBehaviour {
     public float reloadTime;
     bool isReloading;
 
+    [SerializeField] AudioClip soundShoot;
     
 
     IEnumerator ReloadCoroutine()
@@ -32,6 +33,7 @@ public class turretShooter : MonoBehaviour {
             gm.currentBullets--;
             GameObject mi;
             mi = (GameObject)Instantiate(missilePrefab, transform.position, transform.rotation);
+            AudioManager.PlayClip(soundShoot,0.5f);
 
             /*if(gm.currentBullets<1)
                 gm.prepareToEnd();

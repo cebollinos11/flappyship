@@ -22,12 +22,19 @@ public class GameManager : MonoBehaviour {
     int ExtraTimeBonus;
 
     CameraShaker camShaker;
+    GameSounds gsounds;
+
+    
+    
 
 	// Use this for initialization
 	void Start () {
         ui = GameObject.FindObjectOfType<UIManager>();
+        gsounds = GetComponent<GameSounds>();
+
         InitGame();
         camShaker = GameObject.FindObjectOfType<CameraShaker>();
+        
 	}
 
     bool CheckForBestScore()
@@ -63,6 +70,7 @@ public class GameManager : MonoBehaviour {
         }
 
         timerActive = true;
+        AudioManager.PlayClip(gsounds.s_PrepareToEngage,1.0f);
 
     }
 
@@ -98,6 +106,7 @@ public class GameManager : MonoBehaviour {
         {
             currentTime += ExtraTimeBonus;
             ui.ShowExtraTime();
+            AudioManager.PlayClip(gsounds.Combo, 1f);
         }
     }
 

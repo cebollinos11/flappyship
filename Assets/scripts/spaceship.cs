@@ -19,7 +19,9 @@ public class spaceship : MonoBehaviour {
 
     [SerializeField]
     GameObject SmokeParticles;
-           
+
+    [SerializeField]
+    AudioClip s_explosion;
 
 
 	// Use this for initialization
@@ -50,6 +52,8 @@ public class spaceship : MonoBehaviour {
         GameObject go = (GameObject)Instantiate(SmokeParticles, transform.position+Vector3.up, transform.rotation);
         go.transform.parent = transform;
         //go.transform.localScale = new Vector3(1 / transform.localScale.x, 1 / transform.localScale.y, 1);
+
+        AudioManager.PlayClipRandomPitch(s_explosion, 1f,multiplier);
 
          
 

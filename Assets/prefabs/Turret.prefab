@@ -359,6 +359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missilePrefab: {fileID: 118770, guid: ba9a76fba16822a43a38f0f5f013b1f5, type: 2}
   reloadTime: 2
+  soundShoot: {fileID: 8300000, guid: 1680263b669d7874fa5f971cf0d38a9b, type: 3}
 --- !u!114 &11496316
 MonoBehaviour:
   m_ObjectHideFlags: 1
