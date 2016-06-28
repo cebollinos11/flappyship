@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour {
 
     void EndGame()
     {
+        AudioManager.PlayClip(gsounds.GameOver, 1f);
         CheckForBestScore();
         ui.ShowResults();
         ui.HideReload();

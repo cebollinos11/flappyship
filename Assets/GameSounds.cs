@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameSounds : MonoBehaviour {
 
-    public AudioClip s_PrepareToEngage,Combo;
+    public AudioClip s_PrepareToEngage,Combo,GameOver;
 
 	
 }
