@@ -92,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   s_PrepareToEngage: {fileID: 8300000, guid: 113ffb4312de3054fbbc0bbb6db92095, type: 3}
   Combo: {fileID: 8300000, guid: b2e3fa5ec309bde4a8aa952a9cdb1234, type: 3}
+  GameOver: {fileID: 8300000, guid: 7dea567fcfc9f1c4baf573c53c91191e, type: 3}
 --- !u!114 &11484376
 MonoBehaviour:
   m_ObjectHideFlags: 1

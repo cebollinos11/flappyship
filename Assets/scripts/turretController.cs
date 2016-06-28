@@ -6,6 +6,8 @@ public class turretController : MonoBehaviour {
     [SerializeField]
     float horizontalSpeed,verticalSpeed;
 
+    public GameObject movablePart;
+
 
 	// Use this for initialization
 	void Start () {
@@ -15,13 +17,13 @@ public class turretController : MonoBehaviour {
 
     void TurnHorizontal(float d)
     {
-        transform.Rotate(new Vector3(0, horizontalSpeed * d * Time.timeScale, 0),Space.World);
+       movablePart.transform.Rotate(new Vector3(0, horizontalSpeed * d * Time.timeScale, 0),Space.World);
     }
 
     void TurnVertical(float d)
     {
-        Quaternion old = transform.rotation;
-        transform.Rotate(new Vector3(verticalSpeed * d * Time.timeScale,0, 0));
+        Quaternion old = movablePart.transform.rotation;
+        movablePart.transform.Rotate(new Vector3(verticalSpeed * d * Time.timeScale,0, 0));
         /*
          * if (transform.rotation.eulerAngles.x < 300f)
             transform.rotation = old;
