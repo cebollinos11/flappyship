@@ -11,7 +11,7 @@ public class RestartGameUI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonUp(0))
         {
             GameObject.FindObjectOfType<GameManager>().InitGame();
         }

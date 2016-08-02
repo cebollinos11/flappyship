@@ -26,7 +26,7 @@ public class turretShooter : MonoBehaviour {
     }
 
 
-    void Shoot()
+    public void Shoot()
     {
 
         if(gm.currentBullets>0)
